@@ -12,6 +12,15 @@ button {
   background: var(--main-color);
   border: none;
   cursor: pointer;
+  transition:
+    background 0.3s,
+    color 0.3s,
+    transform 0.2s;
+}
+
+button:hover {
+  background: var(--primary-color);
+  color: var(--main-color);
 }
 
 * {
@@ -32,6 +41,7 @@ nav {
   color: #fff;
   font-family: sans-serif;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 li {
@@ -90,7 +100,6 @@ header {
   bottom: 2rem;
   padding: 10px 30px;
   margin-top: 20px;
-  background: transparent;
   background: var(--main-color);
   transform: translateY(60px);
 }
@@ -299,10 +308,13 @@ hr {
   }
   #our-story {
     text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   #our-story .title {
-    transform: translateX(50px);
+    transform: none;
+    margin: 0 auto;
   }
 
   #our-story .line {
@@ -311,6 +323,7 @@ hr {
 
   .content-section {
     text-align: center;
+    margin: 0 auto;
   }
 
   #our-story .img-container .img {
